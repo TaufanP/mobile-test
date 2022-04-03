@@ -25,6 +25,8 @@
   - [Installation](#installation)
   - [Generate Android Debug APK](#generate)
 - [Download](#download)
+- [Used Packages](#packages)
+- [Future Updates](#updates)
 
 <!-- BACKGROUND -->
 
@@ -57,7 +59,11 @@ MailBook is a contact organizer application. You can store various info about yo
 
 ### Installation <a name="installation"></a>
 
-Clone this [repo](https://github.com/TaufanP/mobile-test) then open the directory with your terminal
+Clone this [repo](https://github.com/TaufanP/mobile-test) then open the directory with your terminal by executing
+
+```
+git clone https://github.com/TaufanP/mobile-test.git
+```
 
 ```
 cd mobile-test
@@ -66,7 +72,13 @@ cd mobile-test
 Install all the packages
 
 ```
-yarn install && npx pod-install
+yarn install
+```
+
+If you want to run in iOS and you are using Mac OS, please execute pod
+
+```
+npx pod-install
 ```
 
 [Run](https://reactnative.dev/docs/running-on-device) the application on your device or use an [iOS simulator](https://reactnative.dev/docs/running-on-simulator-ios)
@@ -96,3 +108,79 @@ mobile-test/android/app/build/outputs/apk/debug/app-debug.apk
 ## Download <a name="download"></a>
 
 Get the android released version [here](https://drive.google.com/file/d/1hmvaQT6HzoHPycIhqzF_3Jn1nZW1d-cF/view?usp=sharing).
+
+<!-- PACKAGES -->
+
+## Used Packages <a name="packages"></a>
+
+### @react-navigation/native
+
+requires
+
+```
+@react-navigation/stack react-native-gesture-handler react-native-safe-area-context react-native-screens
+```
+
+Manage application's navigation between screens.
+
+### react-native-modal-datetime-picker
+
+requires
+
+```
+@react-native-community/datetimepicker
+```
+
+Provides date picker in native version on each platform.
+
+### axios
+
+Manage API calls and handles its responses.
+
+### react-hook-form
+
+Helps to maintain text input abilities to manage user's inputs.
+
+### react-native-image-picker
+
+Use native image picker on each platforms.
+
+### react-native-reanimated
+
+Provides various ways to maintain app animations.
+
+### react-native-skeleton-content-nonexpo
+
+requires
+
+```
+react-native-linear-gradient
+```
+
+Display skeleton loading.
+
+### react-native-svg-transformer
+
+requires
+
+```
+react-native-svg
+```
+
+Allows to convert SVG files into React component.
+
+### redux-persist
+
+requires
+
+```
+@react-native-async-storage/async-storage redux react-redux
+```
+
+Persist storage data in local storage.
+
+<!-- UPDATES -->
+
+## Future Updates <a name="updates"></a>
+
+Going to make contact deletion process safer. Currently, haven't implemented confirmation dialog when deleting a contact.

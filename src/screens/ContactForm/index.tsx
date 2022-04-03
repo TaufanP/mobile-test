@@ -117,7 +117,7 @@ const ContactForm = () => {
       />
       <KeyboardAvoidingView
         behavior={isIos ? 'height' : 'padding'}
-        keyboardVerticalOffset={40}>
+        keyboardVerticalOffset={isIos ? 40 : 16}>
         <DummyFlatList usePadding>
           <Gap vertical={spaces.medium} />
           <ProfilePhoto onPress={onPickPhoto} uri={getValues('photo')} />

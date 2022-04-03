@@ -1,4 +1,4 @@
-package com.phonebook;
+package com.profennador.mailbook;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;
